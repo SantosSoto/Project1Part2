@@ -1,0 +1,7 @@
+@use 'sass:meta';
+
+// Keep Bootstrap's selectors inside these two pages, including its resets.
+// The inner data-bs-theme="light" element supplies Bootstrap's CSS variables.
+.bootstrap-page {
+  @include meta.load-css('bootstrap/dist/css/bootstrap.css');
+}
